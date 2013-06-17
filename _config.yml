@@ -1,0 +1,13 @@
+markdown: kramdown
+permalink: pretty
+
+timezone: UTC
+
+kramdown:
+  auto_ids: false
+
+exclude:
+  - README.md
+  - LICENSE.md
+
+url: http://eatmesf.com
