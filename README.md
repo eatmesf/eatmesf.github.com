@@ -1,4 +1,4 @@
-eatmesf.github.com
+EatMeSF
 ==================
 
 Foodspirational

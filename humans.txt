@@ -4,9 +4,6 @@
 # TEAM
 
     Ellis Berner -- @maletor
-
-# THANKS
-
     Lauren Hopkins
 
 # TECHNOLOGY COLOPHON
