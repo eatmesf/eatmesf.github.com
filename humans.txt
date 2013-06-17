@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Ellis Berner -- Software Engineer -- @maletor
+    Ellis Berner -- @maletor
 
 # THANKS
 
@@ -13,3 +13,5 @@
 
     HTML5, CSS3
     jQuery, Modernizr
+    Normalize.css, HTML5 Boilerplate, Bootstrap
+    Jekyll
