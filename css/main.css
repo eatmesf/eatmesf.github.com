@@ -1029,7 +1029,6 @@ nav#menu #menu-nav li.sfHover ul a:hover {
 }
 
 .single-people {
-  margin-bottom: 30px;
   overflow: hidden;
 }
 
@@ -1071,7 +1070,7 @@ nav#menu #menu-nav li.sfHover ul a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -12px 0 0 -12px;
+  margin: -7px 0 0 -7px;
 
   color: #FFFFFF;
   font-size: 24px;
@@ -1109,10 +1108,6 @@ nav#menu #menu-nav li.sfHover ul a:hover {
 }
 
 /* Single Team Page */
-
-#single-team .team-img {
-  margin-bottom: 40px;
-}
 
 #single-team .team-img img {
   width: 100%;
@@ -1207,12 +1202,8 @@ nav#menu #menu-nav li.sfHover ul a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -8px 0 0 -8px;
+  margin: -7px 0 0 -7px;
   text-indent: 0;
-}
-
-#single-team .paginate-team ul li.prev a i {
-  margin: -8px 0 0 -9px;
 }
 
 #single-team .paginate-team ul li.prev a:hover,

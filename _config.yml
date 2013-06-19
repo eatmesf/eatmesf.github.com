@@ -9,5 +9,6 @@ kramdown:
 exclude:
   - README.md
   - LICENSE.md
+  - CNAME
 
 url: http://eatmesf.com
