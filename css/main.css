@@ -1109,6 +1109,10 @@ nav#menu #menu-nav li.sfHover ul a:hover {
 
 /* Single Team Page */
 
+#single-team .team-img {
+  margin-bottom: 40px;
+}
+
 #single-team .team-img img {
   width: 100%;
 }
@@ -1216,7 +1220,7 @@ nav#menu #menu-nav li.sfHover ul a:hover {
     height: 2px;
     position: relative;
     width: 50px;
-  margin: 20px auto 60px;
+  margin: 20px auto 80px;
   background: #F97E76;
 }
 
