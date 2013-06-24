@@ -1,5 +1,4 @@
 # humanstxt.org/
-# The humans responsible & technology colophon
 
 # TEAM
 
@@ -8,7 +7,4 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
-    Normalize.css, HTML5 Boilerplate, Bootstrap
-    Jekyll
+    HTML5 Boilerplate, CSS3, jQuery, Modernizr, Respond.js, Bootstrap, Jekyll
