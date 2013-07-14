@@ -938,7 +938,7 @@ nav#menu #menu-nav li.sfHover ul a:hover {
 }
 
 #title-page h2 {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 300;
     line-height: 1.2;
   padding: 60px 0;
@@ -1001,10 +1001,6 @@ nav#menu #menu-nav li.sfHover ul a:hover {
 #content {
   padding: 100px 0 90px;
     position: relative;
-}
-
-#content img {
-  width: 100%;
 }
 
 /*-----------------------------------------------------------------------------------*/
