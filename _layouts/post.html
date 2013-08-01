@@ -1,138 +1,59 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }}</title>
-    <meta name="description" content="San Francisco food lovers rejoice!">
-    <meta name="viewport" content="width=device-width">
+---
+layout: default
+---
 
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="/css/main.css">
-
-    <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-  </head>
-
-  <body>
-    <!--[if lt IE 7]>
-      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="span3">
-            <div id="logo">
-              <img src="/img/eatmesf.png" style="height: 100px;">
-            </div>
-          </div>
-          <div class="span9">
-            <a id="mobile-nav" class="menu-nav" href="#menu-nav"><span class="menu-icon"></span></a>
-
-            <nav id="menu">
-              <ul id="menu-nav">
-                <li><a href="/">Home</a></li>
-                <li class="current_page_item"><a href="/blog">Blog</a></li>
-                <li><a href="/travel">Travel</a></li>
-                <li><a href="/about_us">About Us</a></li>
-              </ul>
-            </nav>
-          </div>
+<section id="intro-box" class="single-post no-featured-post">
+  <span class="arrow"></span>
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h2 class="entry-title">{{ page.title }}</h2>
+        <div class="entry-meta">
+          <span class="author">By {{ page.author }}</span>
+          <span class="dividers">/</span>
+          <span class="published">{{ page.date | date_to_string }}</span>
+          <span class="dividers">/</span>
+          <span class="comment-count"><a href="http://demo.alessioatzeni.com/anubis/post-gallery/#respond" title="Comment on Post Gallery">No Comments</a></span>
         </div>
-      </div>
-    </header>
-
-    <section id="intro-box" class="single-post no-featured-post">
-      <span class="arrow"></span>
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <h2 class="entry-title">{{ page.title }}</h2>
-            <div class="entry-meta">
-              <span class="author">By {{ page.author }}</span>
-              <span class="dividers">/</span>
-              <span class="published">{{ page.date | date_to_string }}</span>
-              <span class="dividers">/</span>
-              <span class="comment-count"><a href="http://demo.alessioatzeni.com/anubis/post-gallery/#respond" title="Comment on Post Gallery">No Comments</a></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div id="content">
-      <div class="container">
-        <section id="blog" class="single-post">
-          <div class="row">
-            <div class="span9 left_side">
-              {{ content }}
-              <div id="comments">
-              <div id="respond">
-                <h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/anubis/post-gallery/#respond" style="display:none;">Cancel Reply</a></small></h3>
-                <form action="http://demo.alessioatzeni.com/anubis/wp-comments-post.php" method="post" id="commentform">
-                  <p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required="true"></p>
-                  <p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-required="true"></p>
-                  <p class="comment-form-url"><label for="url">Website</label><input id="url" name="url" type="text" value="" size="30"></p>
-                  <p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>                       <p class="form-submit">
-                  <input name="submit" type="submit" id="submit" value="Submit Comment">
-                  <input type="hidden" name="comment_post_ID" value="173" id="comment_post_ID">
-                  <input type="hidden" name="comment_parent" id="comment_parent" value="0">
-                  </p>
-                  <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="ba3609a7ef"></p>          </form>
-              </div>
-            </div>
-            </div>
-            <div class="span3 right_side">
-              <!-- <aside id="sidebar"> -->
-              <!--   <div id="text&#45;2" class="widget widget_text"> -->
-              <!--     <h3 class="widget&#45;title">About Widget</h3> -->
-              <!--     <div class="textwidget"> -->
-              <!--       As busy professionals (and we’ll admit, novice cooks), we depend on San Francisco's many restaurants and bars to make it through the week. The good news is we love discovering new hot spots and sometimes rediscovering old favorites. Our City is a culinary wonderland that will satisfy any craving on almost any budget. From the City's hidden gems to its most sought&#45;after institutions, we're excited to share our tastes with you. We hope you'll join us! -->
-              <!--     </div> -->
-              <!--   </div> -->
-              <!-- </aside> -->
-            </div>
-          </div>
-        </section>
       </div>
     </div>
+  </div>
+</section>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <nav id="social-footer" class="span12">
-            <ul>
-              <li><a href="https://www.facebook.com/EatMeSF" target="_blank"><i class="font-icon-social-facebook"></i></a></li>
-              <li><a href="http://instagram.com/EatMeSF" target="_blank"><i class="font-icon-social-instagram"></i></a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </footer>
-
-    <section id="footer-credits">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <p class="credits">EatMeSF &copy; 2013. Powered by <a href="http://jekyllrb.com/">jekyll</a>.</p>
+<div id="content">
+  <div class="container">
+    <section id="blog" class="single-post">
+      <div class="row">
+        <div class="span9 left_side">
+          {{ content }}
+          <div class="clearfix"></div>
+          <div id="comments">
+            <div id="respond">
+              <h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/anubis/post-gallery/#respond" style="display:none;">Cancel Reply</a></small></h3>
+              <form action="http://demo.alessioatzeni.com/anubis/wp-comments-post.php" method="post" id="commentform">
+                <p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required="true"></p>
+                <p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-required="true"></p>
+                <p class="comment-form-url"><label for="url">Website</label><input id="url" name="url" type="text" value="" size="30"></p>
+                <p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>                       <p class="form-submit">
+                <input name="submit" type="submit" id="submit" value="Submit Comment">
+                <input type="hidden" name="comment_post_ID" value="173" id="comment_post_ID">
+                <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                </p>
+                <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="ba3609a7ef"></p>          </form>
+            </div>
           </div>
+        </div>
+        <div class="span3 right_side">
+          <!-- <aside id="sidebar"> -->
+          <!--   <div id="text&#45;2" class="widget widget_text"> -->
+          <!--     <h3 class="widget&#45;title">About Widget</h3> -->
+          <!--     <div class="textwidget"> -->
+          <!--       As busy professionals (and we’ll admit, novice cooks), we depend on San Francisco's many restaurants and bars to make it through the week. The good news is we love discovering new hot spots and sometimes rediscovering old favorites. Our City is a culinary wonderland that will satisfy any craving on almost any budget. From the City's hidden gems to its most sought&#45;after institutions, we're excited to share our tastes with you. We hope you'll join us! -->
+          <!--     </div> -->
+          <!--   </div> -->
+          <!-- </aside> -->
         </div>
       </div>
     </section>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-
-    <script src="/js/vendor/bootstrap.min.js"></script>
-
-    <script src="/js/plugins.js"></script>
-    <script src="/js/main.js"></script>
-
-    {% include analytics.html %}
-  </body>
-</html>
+  </div>
+</div>

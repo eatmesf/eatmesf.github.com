@@ -1,29 +1,8 @@
-/*-----------------------------------------------------------------------------------
-
-  Theme Name: Anubis
-  Theme URI: http://www.themes.alessioatzeni.com/wp/anubis
-  Description: A Pixel-Perfect Responsive Theme for creatives.
-  Author: Alessio Atzeni
-  Author URI: http://www.alessioatzeni.com
-  Version: 1.0.1
-
--------------------------------------------------------------------------------------*/
-
-
-
 /*-----------------------------------------------------------------------------------*/
 /*  1.  Document Setup - Basic Style
 /*-----------------------------------------------------------------------------------*/
 
-html, hmtl a{
-  width:100%;
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
 body{
-  background:#FFFFFF;
   color:#323A45;
   font-weight:300;
   font-size:16px;
@@ -934,11 +913,10 @@ nav#menu #menu-nav li.sfHover ul a:hover {
 #title-page {
   position: relative;
   background-color: #E9F0F4;
-  margin-top: 100px;
 }
 
 #title-page h2 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 300;
     line-height: 1.2;
   padding: 60px 0;
@@ -1824,10 +1802,6 @@ nav#menu #menu-nav li.sfHover ul a:hover {
   padding: 70px 0 80px;
 }
 
-#intro-box.single-post.no-featured-post {
-  margin-top: 100px;
-}
-
 #intro-box.single-post .entry-title {
   color: #FFFFFF;
   font-size: 32px;
@@ -2531,6 +2505,18 @@ footer {
   padding: 80px 0 70px;
 }
 
+@media (max-width: 767px) {
+  .full-width {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+}
+
+.navbar-fixed-top-eatme {
+  margin-bottom: 0px;
+}
+
 #social-footer ul {
   margin: 0;
   padding: 0;
@@ -2740,7 +2726,7 @@ a.jp-pause {
 
 .jp-progress {
   box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
     margin: 10px 0;
@@ -3372,4 +3358,32 @@ Font-Face Icons
 
 .font-icon-align-center:before {
   content: "\e0f1";
+}
+
+
+
+.navbar .nav {
+  margin: 26px 0 0 0;
+}
+
+.navbar .btn {
+  margin-top: 31px;
+}
+
+.navbar-inner {
+  border: 0 none;
+}
+
+.navbar .navbar-inner {
+  background-color: #323A45;
+  background-image: none;
+}
+
+.navbar .nav>li>a {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.navbar .nav>li:last-child>a {
+  padding-right: 0;
 }

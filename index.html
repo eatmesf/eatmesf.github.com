@@ -1,88 +1,44 @@
 ---
 layout: default
-title: EatMeSF
+page_title: Blog
 ---
-
-<header>
-  <div class="container">
-    <div class="row">
-      <div class="span3">
-        <div id="logo">
-          <img src="/img/eatmesf.png" style="height: 100px;">
-        </div>
-      </div>
-      <div class="span9">
-        <a id="mobile-nav" class="menu-nav" href="#menu-nav"><span class="menu-icon"></span></a>
-
-        <nav id="menu">
-          <ul id="menu-nav">
-            <li class="current_page_item"><a href="/">Home</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/travel">Travel</a></li>
-            <li><a href="/about_us">About Us</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
-
-<section id="title-page">
-  <h2>Blog</h2>
-  <span class="arrow"></span>
-</section>
 
 <div id="content">
   <section id="blog" class="blog-post-full">
     <div class="container">
       <div class="row">
         <div class="span12">
-
-
-          <article class="post-308 post type-post status-publish format-standard hentry category-standard tag-cool" id="post-308">
-
-
-
-            <div class="post-thumb">
-              <a class="hover-post" title="Post Standard with Image" href="/travel/2013/06/23/hong-kong/">
-                <img width="1170" height="500" src="/img/hong_kong/hong_kong.jpg" class="attachment-blog-post-thumb wp-post-image" alt="lovemonster">        <div class="overlay"></div>
-                <i class="font-icon-link"></i>
-              </a>
-            </div>
-
-
-            <div class="entry-type">
-              <a href="/travel/2013/06/23/hong-kong/" title="Post Standard with Image"><i class="font-icon-align-center"></i></a>
-            </div>
-
-            <div class="row">
-              <div class="span6 offset3">
-                <h2 class="entry-title"><a href="/travel/2013/06/23/hong-kong/" title="Post Standard with Image">Hong Kong</a></h2>
-
-                <div class="entry-meta">
-                  <span class="author">By Lauren Hopkins</span>
-                  <span class="dividers">/</span>
-                  <span class="published">June 23, 2013</span>
-                  <span class="dividers">/</span>
-                  <span class="comment-count"><a href="/travel/2013/06/23/hong-kong/" title="Comment on Post Standard with Image">5 Comments</a></span>
-
-                </div>
-                <div class="entry-content">
-                  <p>You “won’t not be disappointed” in Mongkok.</p>
-
-                  <p>Our first real vacation of 2013 came as a bit of a surprise. We were planning a late-summer escape to Hawaii when I found out I’d be going on a work trip to Hong Kong. After running the numbers (and counting our available vacation days), we decided to squeeze in some vacation time in Hong Kong at the end of my work trip and scrapped the Hawaii plans. We figured Hawaii would always be there waiting for us but this was a chance to travel half-way around the world at a significantly reduced expense.</p>
-
-                  <p>I arrived first for my work event and, regrettably, spent my first few days in Hong Kong inside a windowless conference room at the Intercontinental. I couldn’t have been happier to see Ellis when he got here, since that meant work was over and vacation was starting. After enduring three terrible-but-could-have-been-worse airplane meals, his first question was &ndash; where are we eating?</p>
-                  <p> <a href="/travel/2013/06/23/hong-kong/" class="more-link">Continue Reading&hellip;</a></p>
-                </div>
-
+          {% for post in paginator.posts %}
+            <article class="post" id="post-308">
+              <div class="post-thumb">
+                <a class="hover-post" href="{{ post.url }}">
+                  <img width="1170" height="500" src="{{ post.title_image }}">
+                  <div class="overlay"></div>
+                  <i class="font-icon-link"></i>
+                </a>
               </div>
-            </div>
-
-
-            <div class="separator"></div>
-          </article>
-
+              <div class="entry-type">
+                <a href="{{ post.title_image }}" title="Post Standard with Image"><i class="font-icon-align-center"></i></a>
+              </div>
+              <div class="row">
+                <div class="span6 offset3">
+                  <h2 class="entry-title"><a href="{{ post.url }}">Hong Kong</a></h2>
+                  <div class="entry-meta">
+                    <span class="author">By {{ post.author }}</span>
+                    <span class="dividers">/</span>
+                    <span class="published">{{ post.date | date: "%B %d, %Y" }}</span>
+                    <span class="dividers">/</span>
+                    <span class="comment-count"><a href="#">5 Comments</a></span>
+                  </div>
+                  <div class="entry-content">
+                    <p>{{ post.excerpt }}</p>
+                    <p> <a href="/travel/2013/06/23/hong-kong/" class="more-link">Continue Reading&hellip;</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="separator"></div>
+            </article>
+          {% endfor %}
           <div class="pagination-blog">
             <ul class="pagination">
               <li class="prev"></li>
