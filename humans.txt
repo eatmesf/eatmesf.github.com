@@ -7,4 +7,4 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5 Boilerplate, CSS3, jQuery, Modernizr, Respond.js, Bootstrap, Jekyll
+    HTML5, CSS3, jQuery, Bootstrap, Jekyll
