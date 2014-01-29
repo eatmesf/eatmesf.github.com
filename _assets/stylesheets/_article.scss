@@ -181,27 +181,27 @@ article {
 
   pre {
     border: 0;
-    padding: 1.5em 3em;
-    margin:0 -3em 1.5em;
-    background: whitesmoke;
+    padding: 1.5em 0em;
+    margin: 1.5em 0;
+    background: #fff;
     border: 0;
-    border-radius: 2px;
-    border-bottom:1px solid #eee;
-    width:100%;
-    font-size:0.8em;
-    overflow-x: auto;
-    display:block;
-
+    border-top: 2px solid #eee;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+    width: 100%;
+    overflow: auto;
+    font-size: 0.8em;
     code {
-      font-size:0.8em;
-      border:0;
+      font-size: 0.8em;
+      border: 0;
+      background: none;
     }
   }
-
   code {
-    border-bottom:1px solid #ddd;
-    border-radius:2px;
-    color:#222;
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    border-radius: 2px;
+    color: #222;
   }
 
   .rounded img {
@@ -214,6 +214,7 @@ article {
 
   .full {
     margin:1.5em -6em;
+    background:#fafafa;
     padding:0;
     text-align:center;
 
