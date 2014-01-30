@@ -52,6 +52,9 @@ include:     ['.htaccess']
 exclude:
   - README.md
   - LICENSE
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
 timezone:    nil
 
 # Show future posts
