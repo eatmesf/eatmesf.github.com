@@ -20,7 +20,7 @@ inc:
     hn: false
   analytics:
     google:
-      id: false
+      id: 'UA-41789029-1'
   google_font: 'PT+Sans'
 url: http://www.eatmesf.com
 exclude:
