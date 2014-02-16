@@ -29,6 +29,7 @@ exclude:
   - Rakefile
   - Gemfile
   - Gemfile.lock
+  - .nojekyll
 permalink: pretty
 paginate: 10
 assets:
