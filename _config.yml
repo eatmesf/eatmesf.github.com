@@ -1,14 +1,14 @@
 inc:
-  title:        "EatMeSF"
-  subtitle:     "Food pimps"
-  cover_image:  blog-cover.jpg
-  logo:         logo.png
-  company:      EatMeSF
-  url:          http://www.eatmesf.com/
-  facebook:     eatmesf
-  twitter:      eatmesf
-  gplus:        '101183822199340201470'
-  about_link:   /about
+  title: "EatMeSF"
+  subtitle: "Food pimps"
+  cover_image: blog-cover.jpg
+  logo: logo.png
+  company: EatMeSF
+  url: http://www.eatmesf.com/
+  facebook: eatmesf
+  twitter: tweetmesf
+  gplus: '101183822199340201470'
+  about_link: /about
   product_link: /the_guide
   tagline: "Get a modern guide for your city"
   disqus:
