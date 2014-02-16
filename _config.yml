@@ -15,8 +15,8 @@ inc:
     shortname: false
   sharing:
     twitter: true
-    facebook: true
-    gplus: true
+    facebook: false
+    gplus: false
     hn: false
   analytics:
     google:
